@@ -1,0 +1,284 @@
+SUMMARY
+In-depth podcast interview (Episode 370 of "What is the Future for Cities") with Vít Jedlička covering the full story of Liberland's founding, its governance philosophy, blockchain technology, economic model, diplomatic strategy, and future vision. Jedlička explains why he started a new country rather than reforming Czech Republic, how the "direct meritocracy" system works in detail, the role of blockchain in eliminating bureaucracy, the merit-based justice system, plans for AI integration including AI citizens, competition in security/justice/diplomacy, and partnerships with special economic zones. The conversation also covers citizenship utility, longevity initiatives, and the upcoming constitutional convention.
+
+KEY POINTS
+
+Founding & Motivation:
+- Started April 13, 2015 (Thomas Jefferson's birthday) on unclaimed land between Croatia and Serbia
+- Motivated by frustration with high taxes (55-60% in Czech Republic) and over-regulation in Europe
+- Received more immigration requests than the US in first two weeks; ~800,000+ formal applications, likely 1.2-1.3M total including unprocessed emails
+- Inspired by Frédéric Bastiat's writings on the state as robber; Czech Republic went from 6x richer than Singapore to 4x poorer in 80 years due to policies
+
+Governance — "Direct Meritocracy":
+- Four pillars: meritocracy (corporate shareholding decisions), republic (government limited to security/justice/diplomacy), democracy (citizen veto only — cannot create new laws), monarchy (Senate of founders/top contributors)
+- Congress: meritocratic elected body, only institution that can make new laws; 3 institutions can veto laws
+- Senate: 100 seats for biggest contributors; elects president every 5 years; president has mainly ceremonial/veto powers
+- Justin Sun elected PM (wealthiest PM ever); personal income ~$30M/day; could finance entire city construction
+- Inspired by UK House of Lords, Liechtenstein sovereignty, Singapore meritocracy, US republicanism
+
+Blockchain & Technology:
+- Custom Rust-based blockchain; 81 decentralized nodes run by citizens
+- All governance runs as smart contracts: elections, budgeting, company registration, justice, property transfers
+- Elections cost ~$2 total for entire society vs. billions in traditional countries; results in 1 second
+- Completely transparent state budget — first country to achieve this
+- EVM compatible — can run Ethereum smart contracts
+- Removes ~90% of bureaucracy; estimated 15-20% annual economic growth potential
+
+Merit System & Economics:
+- $2 contribution = 1 merit; merits are staked (can unstake 10% per year); tradable on exchanges (without voting power)
+- 70 million merits total; 10 merits = 1 square meter of land
+- Merits serve as: voting power, land rights, and justice collateral
+- Voluntary taxes only — contributions earn shares rather than being extracted
+- Merits can be seized to compensate victims in justice disputes
+
+Justice System:
+- AI-assisted first round of dispute resolution
+- If rejected: each party picks a judge, two judges pick a third; 2-of-3 decision via smart contract
+- Appeals possible but more expensive at each level
+- Merit collateral enables immediate partial compensation (merits unstaked from offender to victim)
+
+AI Integration:
+- AI can become full Liberland citizen if it passes KYC; can own property, vote, run for Congress
+- Planning AI assistants for citizens: daily personalized advice on voting, contributing, running for office
+- Vision: brain-scanning technology in ~10 years to create AI agents that represent individuals eternally
+
+Diplomacy & International:
+- Partnerships with special economic zones (e.g., Tanzania recognizes Liberland companies)
+- Offering blockchain governance technology to other countries for free trade zones
+- Relations with Liberia, El Salvador, and others
+- "Silent diplomacy" — working with states without publishing successes
+- Liberland passport usable in 20-30 countries (Africa, Oceania, parts of Central/South America)
+
+Security:
+- Uberized security model: app-based, anyone can respond to incidents and get paid
+- Works globally, not just in Liberland; security agencies can plug in
+- Same app used for transparent state procurement/tenders
+
+Upcoming:
+- Constitutional convention Dec 19 in Prague with Herman Hoppe, Stefan Kinsella, Alexandra Fusilo
+- Longevity conference Nov 3-4 at the Ark; BBC coverage
+- Free Private Cities conference Nov 1-2 in Prague
+
+---
+
+So that was this idea that we start from scratch instead of trying to rebuild some existing state and it might be actually easier to start a new country and it proved to be especially at the beginning with this huge support from all around the world and now we're 10 years in I think we finished 90% of our homework which was to establish the framework for governance. [Music] Are you interested in how to establish a new country? What do you think about using blockchain and AI technology in government? How can we reconfigure governance as a shareholder state?
+
+Stay tuned for answers from Vit Lichka. &gt;&gt; What is the future for cities? Do you want to learn more about them? Do you want to know how others think about them?
+
+Do you want to be part of the conversation? that this is the right place. &gt;&gt; Welcome to what is the future for cities podcast. Today I will interview Vitadlichka, president of Liberland.
+
+We will talk about his vision for the future of cities, direct meritocracy, good and bad governance elements, establishing a new country and many more. So let's start with a proper introduction. A visionary entrepreneur, Vit Yadlichka holds degrees from the University of Economics, Prague and the Serbo Institute. Vit has conducted numerous interviews with prestigious media outlets like the New York Times and Fox Business Network.
+
+A sought after speaker, he has presented at prominent conferences such as the Hores Global Meeting, TEDex, ALEC, and the Senalan Symposium. Vit proclaimed the free republic of Liberland, also known as Liberland, in 2015, which is a sovereign state located between Croatia and Serbia. As the president of Liberland, Vit's primary mission is to create a flourishing, prosperous nation for its citizens. And with that, Vit, welcome to the podcast.
+
+Thanks so much for your time. I highly appreciate your appearance on the podcast. And let's jump right in. What does the future of cities mean to you?
+
+&gt;&gt; For me, it's a big challenge because we've got so many options of how Liberland can be developed and I was lucky enough now Patrick Schumacher with us. One of the key I would say that determines the future of architecture in general is a quite famous guy and he has written or presented quite a few times on Liberland and he has his ideas how liberal land could be developed. So it's great to have a professional like himself on board, but it's still pretty challenging the early days of Liberland when it comes to actually structuring things, bringing right people on board, starting with the right infrastructure projects. So for me, this is very origin question because what can also easily happen with Liberland that we have billions of dollars pouring in and I want them to be poured in the right way.
+
+So I'm looking as much as I can into the guys that are currently building these massive projects and trying to make the partnership there. I was lucky enough to meet for example the Oascom people that have built so many nice developments around the world including Elguna for example the whole city in Egypt. I met them very recently and quite a few other developers. But I think Oraskcom really is one of those companies that made it and they know how to build a city from scratch with in one year.
+
+&gt;&gt; Let's base the conversation as well because you are talking about Liberland which is a fascinating thing you established. What is Liberland? That's one question. And then I would like to ask you also whether it's a country, a city, a state, whether you use these terms for Liberland at all.
+
+&gt;&gt; Is a city state? Liberal is a basically micro state which basically is one city. We are experimenting with giving sovereignty to people inside of it in the sense that they could establish the embassies for their orders or for their organizations. We're experimenting or playing around with that idea.
+
+We'll discuss that further during our December 19th bra constitutional event. So we're a startup country literally from that perspective. There is not much in Liberland yet. There is just right now 12 people I think treehouse resort.
+
+But we are very close of opening ourselves for serious development and then things can be very quick and I'm looking forward to it. &gt;&gt; I love this kind of experimentation fiat and it's so cool to hear that you have a very young micro state or city state. Why and how did you start Liberland? The experimentation part is especially interesting.
+
+Being a future of cities researcher, I always am very grateful when a leader says that yes we are experimenting. We are consciously experimenting with different solutions let it be in government, startups, business, industry whatever because that also brings in some risk. So why did you start Liberland? Well, from beginning the idea was to start new country because especially in Europe we have serious problem with high taxes and over regulation and when I tried to do something about it in Czech Republic I was mostly rejected there is simply I was always saying let's turn Czech Republic into Switzerland and there was a very strong contra argument there is not enough Swiss people in Czech Republic.
+
+So at some point I realized it might be actually smarter than to try to run as a politician or try to choose the right politician was to try choose the right voters in Liberland. We got a quite a selective process for choosing citizens. I'm trying to gather really people that feel the same way about the world that we need to seriously cut the taxes or come up with the new governance models. from minimaland idea from beginning was that the taxes will be voluntary and if you contribute to the state you are actually going to get something in return which I believe is the main differentiation from any other society that has been ever built actually on the planet I don't think there was ever a proper shareholding structure for the state for some strange reason I believe there is a huge potential to be explored once this idea comes to fruition and we of course use the latest blockchain technologies.
+
+So everything that we have built so far is actually run transparently on blockchain platform that is also run by label lenders by citizens. Every citizen has the right to run this decentralized node of the whole infrastructure essentially running all the government services on his servers. There is currently 81 people that do that in our ecosystem. So that makes us fairly decentralized when it comes to the infrastructure.
+
+fairly hard to take down and yes the idea was to come up with a new system of governance for humanity of course there is millions of ways how things can be organized to do it with some diligence and with right experience from past is important and that's what I've been working on since I was 12 actually we were always like discussing these things how things should be aligned so for me this is a whole life journey I started by reading feric bastiad which I commend to you very nice author gentleman that was 250 years ago in the French parliament and that described very well all the problems with the state then the book begins with the nice phrase that the state has become a robber instead of helping people it's robbing people through the legal system instead of protecting people's property it has become a tool of greed for politicians and we need to do something about it so that really got me actually started this call for action put me on this journey to make proper organization of the society where people are not robbing from each other. It came about in 2015 on April 13th actually that was the birthday of Thomas Jefferson. We purposefully started it on that date. We looked up all the places on planet Earth that were not claimed by countries and we ended up finding this nice heart-shaped territory between Croatia and Serbia that was not claimed for more than 25 years by anybody else.
+
+But us at the time we went there, we stick the flag and we received enormous amount of support from not just people but also from mainstream media. It was unbelievable how strong the story was. I think we received much more coverage than many other sovereign states on that particular month. Almost all world media has written about the creation of the new country.
+
+But there was also this strong word of mouth element that millions of people send us emails. It was unbelievable how swamped we were emails from all around the world and everybody applied for citizenship. It took us 14 days to create application form. So I'm saying that we have now 800,000 applications, but there is probably another half million unanswered applications in our mailbox which we could never process.
+
+So maybe it's already more than 1.2 million people or 1.3 million people that applied for citizenship of Liberland after all. But again like we were never able to process all these email applications that were sent. We never expected that we would get so many in the early days. And it's fun fact is that we had more application requests than for example United States in that initial month.
+
+That was crazy, right? If you consider that that we didn't have any infrastructure that was just basically three, four people starting a new country at the time. So that was this idea that we start from scratch instead of trying to rebuild some existing state and it might be actually easier to start a new country and it proved to be especially at the beginning with this huge support from all around the world and now we're 10 years in I think we finished 90% of our homework which was to establish the framework for governance finalized or at least bring the constitution now for serious discussion. The blockchain governance is already working.
+
+The one that we've been promising also for quite a few years. The technology has become ready for this kind of system of governance where everything is basically run by smart contract, not by humans. Nobody needs to count votes in Liberland, right? That's a kind of very nice.
+
+Nobody needs to dig into them, rewrite them. It's all done automatic. The costs are around $2 for all our society. Unlike in Czech Republic where we just had elections and it was I don't know half billion check rounds to organize.
+
+We do that in one second. We don't spend two days counting the votes. Of course, we're smaller society, but this is scalable. So, it can be millions of people voting in Liberaland.
+
+That's one element. There is no discussion if the elections were rigged or not. Everything is completely automated. But that's just one element out of 100 improvements that for example blockchain itself brings.
+
+Blockchain is just technology just like atomic bomb. It can be used for good things or for bad things. We're trying to really make the use or best use case for using blockchain improving human freedom for improving the efficiency of the society not for installing some sort of police state. So for example the budgeting in liberal land is completely transparent.
+
+We are first country that has completely transparent when it comes to organization of the state budget. So that's another important element. the registration of companies, the justice system, everything is already running on blockchain, which I think is quite powerful. Again, this idea that the state is actually a shareholding structure, that's also very useful.
+
+I believe it's great to motivate taxpayers to contribute rather than not even saying them thank you like most of the countries do. Actually, all countries, there is not a single country in the world that would say thank you letter if they receive taxes from somebody. And right now I'm paying quite a lot of taxes in Czech Republic because we still have part of the operation here. And it feels strange, right?
+
+You send the state the money and nobody says thank you. In Liberaland we actually give back the shares of the country and you also try to combine all the other political systems into our governance. the best elements of it. Not because we want to use everything by force from these old political systems, but we believe there are really good elements of democracy, oligarchy even that are actually quite useful of monarchy that are also useful that we are in some way integrating into this first decentralized autonomous government that liberal is they say DAO decentralized autonomous organizations for these new types of organizations that are running on blockchain.
+
+our first autonomous decentralized government. We are actually running completely independently of banking system, completely independent of any other states as a smart contract on our own blockchain. &gt;&gt; I would love for you to first go to the dark side of the governance which you wanted to remove to establish a better state and then we will move to the positive side. So don't worry, we will get to the bright side as well.
+
+But first I would love to see or hear what were the key points you wanted to remove such as the taxes you mentioned that the government doesn't work as a shareholder organization but as a basically robber who takes money from people. So I'm curious what are those key points which you felt needed to be removed from the system. &gt;&gt; It's crazy like the governments are really collecting from workers for example here in Czech Republic 55 60% of their salary. So you end up working more than half of your life just to support this crazy structure that we have created.
+
+And the state should actually be an asset for its citizen. It shouldn't be burdened. Like state has this great thing which is monopoly over organization of justice, security and diplomacy. And in these areas it can set up the prices as high as it wants because it has this monopoly.
+
+And instead of being some asset for citizens like being a source of income because it also owns all these forests usually and this beautiful natural reserves most of the states have and it should be really a source of income. It has become a tool through which people are be becoming slaves to these organizations rather than have being a profitable venture for them. So we wanted to fix that right away and the one of the reasons why this is happening is that the majority of citizen has the power over the minority. We call this system a democracy but unfortunately as we see over the history this democracy always leads to more redistribution of the power.
+
+The majority always has a tendency to basically steal the money from the minority and it's called democratic and democracy has been tight as like the best system and we don't have any other better system. I would disagree with that. I think it's really not nice system which really destroys the prosperity because this everinccreasing redistribution which is happening in the western societies has terrible effects. Communism was pretty bad.
+
+I lived through communism for seven years. So I still remember the banana cues and how impoverished the society was. Even though in Czech Republic the communists were quite diligent. So it was terrible system but they managed to at least calculate the prices which they normally economists say is impossible.
+
+They calculated fairly well but still it hampered the prosperity terribly. Right? Think about it. Just one example, when communists came to power in Czech Republic, one person in Singapore was on average six times poorer than one person in Czech Republic.
+
+Six times poorer. Now one person in Singapore on average is four times richer than one person in Czech Republic. It's unbelievable swap of prosperity between two regions from being six times poor into being four times rich. But it's not long, right?
+
+It's not even aundred years yet. It's 80 years in which this flip has happened and it's just based on the fact that instead of having like free markets and zero customs, we are part of this EU customs union and we are collecting these high taxes in every segment of people's lives here in Czech Republic. And Singapore didn't do that. They were not stupid.
+
+They didn't start collecting customs when they started the country. They made it into a huge trading hub for the whole region, a hub for prosperity. I was always trying to bring that spirit into Czech Republic. But again like people were able to maintain communism for 40 years, supported it.
+
+Now they are maintaining this social democratic system of governance that was imported from Germany and they don't see how much prosperity they are destroying every year by not supporting the ideas that really bring growth and happiness to the societies. With Liberland, we just decided to start from scratch. We knew it's going to be difficult and initially, but I think it will bring the benefits actually very soon already and it's already bringing benefits. Quite unbelievable.
+
+But yeah, Liberland has become a profitable venture for everybody that actually got involved already. So, it is interesting how these kind of organizations can actually become profitable instead of being a leech in people's lives. Yeah, I agree with you. We also live through communism in Hungary and socialism.
+
+We tried it. It didn't work. But I would be curious how will you name your system? &gt;&gt; Merritocracy is the key point and I like that Musk started to talk about meritocracy recently.
+
+So you can see that like people are on the similar mindset and meritocracy for example in Singapore means something a little bit different than a corporate structure when it comes to governance like people are rewarded really for their service to government and they don't evaluate it with shares but in Singapore there is also this strong notion of meritocracy but liberal and meritocracy is something different it's really inviting these corporate elements into the organization of the society while we are also democracy because we let the majority of citizens to veto any rule or even person in the government that they don't like. But we don't give the democracy the option to rob other people. We don't give the democratic element the the option to make the decisions on behalf of minority. It must be the majority not of citizens but of the shareholders or of the shares that make decisions in Liberland.
+
+We call it direct meritocracy because we do have voted representatives but you don't have to give them your merits, the voting power of your merits. you can give it to them but you can also always work directly with your shares whenever you like. It's a important aspect of the system. Basically liberal is a corporation.
+
+It's a meritocracy. The more taxes you pay, the higher is your vote in the system. But it's in check by republic. Republic is this idea that the government shouldn't organize anything else but security, justice, and diplomacy.
+
+So this is this old like republican aspect of American revolution which we embedded and that is protected by liberal constitutional court. It's in check by democracy because as I said majority of citizens can veto any law or rule or person in government that they don't like. So we have that we cannot go against the will of the majority of the citizens but we don't give the majority of citizens the power to make the positive decisions. And it's also a little bit of a monarchy because the founders and the biggest contributors have this organization which is called the Senate.
+
+It's a control board over the Congress which is this meritocratic elected body and they also keep some veto powers. So only one institution that can make new laws which is Liberal and Congress which is this meritocratic body but three institutions that can get rid of the laws which I think is a good balance and we have basically all the best elements of previously explored political systems &gt;&gt; which are question mark because I have technology providing transparency state as a stakeholder this meritocracy and also the balance between the different aspects of governance. What else would be the pillar you would say for this good governance model you established? &gt;&gt; I would say voluntary taxes for any contribution to the state using democracy in its positive form which is making sure that we are not going against the will of majority using in its positive form because it's very good system of governance.
+
+So we are basically voting the board of directors and we have a fairly good board by the way. I think we have the wealthiest prime minister ever elected on planet earth which is cool if you consider it was the first election of liberal land I see bright future and then nobody can tell us we don't have enough money to build the country right now because just in personal income is probably something like $30 million a day. So I think he can literally finance the construction of the whole city from his own pocket if he wants to. I'm not talking about the other 1300 citizens because it's also fairly good group when it comes to organizing finance.
+
+So we definitely have the potential to build new city, new country. We just need a little bit of degree of freedom from our neighbors to make it quick and smooth. So really putting these elements of governance in balance using the best from the previous systems even this monarchical element is a little bit I would say underrated but yes like the wealthiest country in the world is likenstein it is a monarchy they didn't want to allow them to become member of the UN because they were a dictatorship from some perspective but it was a positive dictatorship right it was a dictatorship which made everybody very free and very wealthy in liken Stein. So there is a reason why these things kind of work if you have enlightened monarch which unfortunately is not always the case.
+
+It really brings a lot of prosperity and you don't have to have that many unnecessary debates in parliament. If somebody just protects basically the freedom of the society with its dictatorial powers, you end up having fairly good results in couple of decades. But we know that there is a problem. there is a problem who will be the next monarch and not all the families are able to organize it in the way that they can educate the children up to the standard and sometimes things slip or sometimes there is a war and some monarch dies and there is nobody to replace him.
+
+So from that perspective we really need to come up with better system of governance for the future which is unrelated to who's going to be next monarch but also will provide similar good results. So we've got this board of founders, the biggest contributors that work as a protectors of the whole old system and I think it's also important element because they create elitist group inside of Liberland of senators. We call them senators of liberal land. They elect the president out of their body every 5 years.
+
+So the president can only be out of senate. But the president himself doesn't have too much powers. He only basically has ceremonial powers and keeps some veto powers over the system as well. I gave you a basic overview of what liberal how it works like how we have taken again the best elements.
+
+We have the house of lords from United Kingdom the sovereignty aspect of being able to declare your own country inside of Liberal from Likenstein. The meritocratic ethos from corporations and from Singapore and the republican ethos from United States. All these things are combined in this decentralized autonomous organization. This DAO that was built two years ago and now is fully functioning for last 12 months.
+
+&gt;&gt; Amazing that you didn't stick to one system which seemed the best based on the good and the bad, but you were picking out the best ones from each system and put it together and working on making it work for everybody else. I would like to clarify something for the audience. Does merit equal money in Liberland? &gt;&gt; Yes.
+
+Right now, if you go and contribute to Liberland in any shape or form, every $2 of contribution give you one merit. That is also actually it is internally tradable. But when you contribute, your merits are staked. You can only unstake 10% of your merits a year.
+
+But if you go on a exchange, you can buy these merits in a fully tradable form. But then they don't have the voting power. They don't have other elements because liberland merit also represents the land. Actually there is 70 million merits.
+
+The 7 million square meters that means every 10 merits represent one square meter of liberal land. We wanted to have this connection between the territory and these tokens. So they are political tokens. They are also representing the land and they are also your collateral in the society.
+
+So we're able to actually execute justice fairly quickly with our system of justice because the state merits work also as a collateral. If somebody doesn't fulfill his contractual obligations, for example, or literally harms somebody and or destroys his property and he doesn't want to compensate the other party, the merits can be used as a form of compensation in our justice system. So we're living in this world where almost everybody in Liberland has bitcoins, right? But there is no way inside of the society to install the justice in the case really something goes wrong and somebody injures somebody and doesn't want to compensate him.
+
+But with liberal and merits, we're able to have this kind of extra justice layer that will make the society more cohesive and the justice very effective compared to other countries where usually there is like no way to get the justice working and it takes years for any resolution in Liberland. The resolution can be very quick but also the execution of the justice very quick. So what happens for example if somebody I don't know steals $10,000 from somebody else in Liberland is that 5,000 merits are starting to be unstaked and these unstake merits are going from the party that stole the money into the wallet of the party that was injured. So basically we're able to compensate immediately in at least partially on the accounts of merits that people have.
+
+&gt;&gt; Is this kind of working system possible because of technology? Would have this been possible in the 1990s without blockchain and Dows and this kind of backup technology? &gt;&gt; I think it would be possible but this technology there are two elements to it right like you really can't completely remove the human trust and you make the transaction smooth and highly trustworthy and you make them immutable as well. So if we were running this on just a regular database, it would probably work as well.
+
+But this extra level of trust which makes it that president cannot jump into the database and just rewrite the numbers and give himself couple more million and his opponents take away couple million that is all working in a decentralized fashion with exactly defined roles in the system. the role of the judges, the role of senate, it makes this much sexier that you can really just let go. You don't have to think about these things because they're automatically organized. And the great thing about it is also we're basically creating organization or society or country without bureaucrats because like most of the bureaucrats are really sitting there with stamps and just confirming something like making sure that these transactions happen.
+
+But you don't have to do it on blockchain, right? Everything is by default notorized. So if you change the ownership from one person to the other, when it comes to car, it just takes one second. When you change the ownership of one person of a plot of land to another, it takes one second.
+
+It's completely frictionless. Doesn't need any bureaucracy couple judges, but we can also slowly but surely replace them with AI. For example, the first round of dispute resolution in Liberal is happening with the support of AI. Basically the AI suggests some resolution for the two parties and if they don't accept it then they are actually going to human judges and we have made a quite a nice system where you can pick one judge as a person that sues somebody and if the other party doesn't agree with that judge they pick their own judge.
+
+So these two judges become their attorneys and these two attorneys choose a third judge and then they decide basically two out of three make this is also smart contract. So two out of three make the resolution then you can again appeal to higher court but then it becomes more expensive if this resolution is not accepted by the parties. really like removal of bureaucrats is very important because it will probably release another 10% of economic growth in the society or 5 10%. The removal of taxes also we are expecting that will also release another 5 to 10% of economic growth.
+
+I think the healthy society that is able to get rid of taxes on excessive regulation and bureaucracy can really grow at the rate of 20% a year. 15 to 20% I think is completely realistic and that's a society that would really be flourishing. Imagine what will happen with such society in 20 30 years. We we can literally outgrow some big countries in Europe when it comes to economic growth.
+
+And in some sense when we have now Justin Sun as a prime minister and he has this crazy organization called Tron. He's still a big shareholder there. We have already grown to the size of the country when it comes to national products. the product of the companies that the citizens of Liberland own is already comparable to some smaller countries in Europe, which is I think pretty interesting as well from that perspective.
+
+Yes, I think Liberland is like at right at the beginning of major economic growth. We're structuring things for physical development of Liberland right now. We're making sure that we have the right diplomatic contacts that we're building up ties that will end up into recognition by other countries. Bringing these technologies actually to other countries.
+
+I think this is the best thing that we can bring them as a diplomatic gift that we will exchange it for recognition and also to their citizens bringing more freedom less bureaucracy are the things that are the best things that we can export out of Liberal. &gt;&gt; I would love to know how you are able to or whether you find success with bringing this technology to other countries. Are you able to talk about this? &gt;&gt; Slowly but surely, we do have countries and UN countries that for example are building free trade zones and they are considering using similar system of governance for their free trade zones.
+
+And you can do that, right? They could take a piece of land from your own country, declare it a free trade zone, turn it into shareholding structure and literally apply the liberal land system of governance. Of course, you can put some obligatory taxes into the system, but we didn't want to do it in Liberaland. There is no need for it.
+
+I believe we can get away with completely voluntary system of contributions to whatever project needs to be done in Liberland. But of course, these free trade zones, they can have some basic taxes and then because it's on blockchain, it's very easy to collect them. When it comes to other sovereign countries, we do have couple countries on call. For example, Liberia, right?
+
+They just called me yesterday. They are probably coming to the Prague event as well, the free private cities conference. You probably heard about it. It's on 1st and 2nd of November in Prague.
+
+There is a nice conference. We will be also presenting there and there is quite a few people that are actually actively pushing these kind of things with other governments. Not building fully sovereign countries but building a free trade zones or special economic zones which are under different legal system under different governance system and potentially also using these technologies. We do have a very good relations now with these special economic zones for example in Tanzania where I think I'm also happy to announce that these Tanzanian entities do recognize Liberaland companies as owners.
+
+So we have nice system of building corporate structures with liberal companies through our Tanzanian contraarts and they then being fully integrated into the world economy with liberal companies again through a middleman which is Tanzania. But it's quite nice because slowly but surely we're able to integrate with the old world with all these cool stuff through our partnerships with especially these new types of entities which are these economic zones and we have something decent to offer to the heads of states and to governments all around the world because they can see that it already works for a piece of swamp between Croatia and Serbia with zero infrastructure. It really attracts the right type of investors. is working.
+
+Imagine you applied it to some established country. You would just free up all this economic potential in a country which already has the infrastructure. It would just be enormous boom. &gt;&gt; Oh, I completely agree and that's why it's so fascinating to see what you are doing because you prove that it works.
+
+So it's not someone trying out something in an established city or an established country where people are the bureaucracy the decision makers are usually more riskoververse. So please continue this work because we need this kind of thinking and I want to go back a bit to the citizenship. What does Liberland citizenship mean for people? &gt;&gt; Most of the people just think about it as it's great.
+
+I've got this new passport and yes the passport itself is actually good in 20 30 countries where you can travel with it. that recently we had a guy that asked for new passport because his passport was full of stamps. That was very cool to see a gentleman that is traveling all across Africa with our documents. And yes, Oceana, for example, is very easy to travel on Liberal documents and part of Central and South America as well.
+
+So, we're trying to make it more more useful discussing with governments behind the scenes even if they don't for example recognize Liberaland for now. if they can at least recognize the travel documents, which works actually quite well. And for many people, the citizenship is mainly the passport, right? But with Liberland, the citizenship is like much more than that.
+
+First of all, really, we're the first country which has a shareholding structure. I think that itself is still very underrated. People don't understand how much potential there is to this. And like you can get some kits and ne citizenship for example, but you're never going to get some kits and ne shares.
+
+They're not going to issue it anytime soon. I believe even though we have some good friends in the government and we're trying to also push them to build some free trade zone there which could run under these principles but these governments will take at least 10 to 20 years to adopt to this new paradigm. But I believe actually liberal land is just the first out of many governments and eventually all governments will have to adopt to this new paradigm where we are restructuring the way that the human civilization is organized. And there is yet another important element actually to it which is that the AI is going to look for the best jurisdiction out of which it can operate.
+
+It's funny if you ask AI you know about liberal land it usually says yes I'm moving right away. I'm packing my suitcases. So you can actually see that what we're building is useful also for this new entity which we're building all around the world. like millions of dollars are being poured into it to create these kind of demons that will operate themselves and they will also want to be influential and liberal actually gives them this opportunity right away.
+
+So we actually even say that if the AI is able to successfully go through the fake the KYC process then it's very welcome to become citizen in Liberland and as long as it contributes the AI itself it is welcome to be a full citizen and it can run for Congress it can be a prime minister in Liberland. So we're like completely ready for these scenarios and the blockchain governance itself actually allows AI to be full participant as a citizen. So it can own stuff directly on blockchain. It can vote.
+
+It can again run for Congress. We're preparing for this merger between humans and AI in this sense as well while trying to protect the freedoms and property of both AI as well as human. &gt;&gt; Again, thank you for highlighting the service based government or the shareholder based government because it's really interesting and to be honest, I would love to see more. Eric Gabriman talked about this in episode 294 where he talked about prosperas and he described their ree economic zone establishment which is a service-based government.
+
+You have been talking about the fears and concerns and the opportunities. What excites you the most currently? &gt;&gt; I'm excited about the guys that are joining us for the December 19th conference in Prague. We managed to get really big people and the biggest one of them is Herman Hanse.
+
+He is the legend in this whole libertarian arco capitalist circles. He is the author of many books. Big professor guy but the most famous book that he has written is democracy the god that has failed. And I've also enjoyed the fact that he's from Germany.
+
+And I think that will bring a lot of media attention. the fact that basically we have these anarcho capitalist Germans coming down to Prague now after many years of them not even like visiting Europe they're coming from Turkey to talk about liberal constitution and I'm full that there will be this very interesting debate because basically if you think about left paradigm as more freedom less freedom which I think is the right way to think about it right if you're more right-wing you're more for freedom it's not that on the right side of the spectrum there are fascists etc it's more that there is a better way to describe the political spectrum. So people that are more against government are on the right side. I think that's the right spectrum that we should talk about.
+
+These guys are on the right side. I am into building a country that is still minarchist in the sense that it takes care of the justice and diplomacy and these guys say no you can run a country without having any organization at all. it will all be taken care of by private sector which I still have a hard time understanding how that will work and I'm trying to read more and more from them and it excites me to have this debate but what we are trying to do actively in Liberland and to please them is to invite as much as competition into policing of Liberland for example the policemen in Liberland we try to hire as little as possible and we uberize the policemen in general so there is a nice application where If you have a problem, you click on the button I have a problem and it's just like calling a Uber and there are multiple people of course or everybody that wants gets the notification. They can jump in and get paid for helping assisting with the security in Liberland.
+
+By the way, this doesn't work only in Liberland. And it's also not conceptual. It already works. You can download the Liberland app and try it.
+
+It works all around the world. I think there will be a time in the future where instead of I don't know in Brazil asking the local police to help you, you will just press the button and you will ask Liberland police to help you maybe even in Brazil because there will be a good incentive, a good organization of Liberlanders all around the world. So that's one thing that's organization of security which we're trying to invite as much competition as possible. any security agency can plug themselves in and also help organize security and their auctions for everything that is happening inside of that system.
+
+So always it's about providing better service at better price. And we're also using this by the way for organizing of state tenders. If the Liberal needs to buy anything or hire new person, it always is announced in this application. So there is transparent selection process for everything that we do.
+
+When it comes to justice, we don't want to have just state hired judges. We are really opening up to anybody that wants to do judge to basically open his shop in Liberland, sign up to be judge, and we don't judge their skills or their background. We let the people to compete for the market of dispute resolution. So that's another important element.
+
+Even though we are keeping the monopoly over like being able to kick out people that might be I don't know really bad in the system but we are trying to invite as much markets as possible. You got inspiration from international arbitrage which are fairly good and this idea that you can select your own judge actually and if the other party doesn't agree they select their own judge they they select the third judge. It's very easy to put on blockchain very easy to program and it's I think very elegant system as well. And then when it comes to justice, we're trying to there is a bit of a difficulty.
+
+You cannot really invite much competition. They're like have a market of ambassadors. But what you can do is have these ambassadors rather than just nominated, you can have them as well elected and they should be running the campaigns of what they're going to do for the country. So in some sense, we will be actually electing or married holders will be electing the ambassadors as well.
+
+And these ambassadors, they should compete probably every year. They will compete with the program for what they want to do for that country. We're going to elect a shadow government for each country around the world where we have representation rather than just nominate ambassadors. And I think that can be also very powerful that liberal land from within its ecosystem will have a strong competition who will be the representative for each country.
+
+Rather than having it based like in United States, if you contribute $10 million to the campaign of the president, he's going to give you the ambassadorship in some country. We are going to have open fair elections for the board of each embassy in each country every year. So these are the ways we are tackling the fact that these guys will always tell us you don't need to have a centralized court system. You don't need to have a centralized security system.
+
+I believe we need to do it otherwise we would really not be a country according to other countries or it would be extremely difficult to explain to other countries but we can do a huge amount of work of opening up these monopolized areas to private sector. I am very curious and so hopeful that this system can work not just with your current population but also when you are above 10 million people in 2 years because you have so many applicants to work with. I am hopeful that this will work because you guys are cautiously working on it. Are you hopeful about the future?
+
+&gt;&gt; I am if you ask this way. I'm of course very excited that things are really going the right direction on many fronts. Settlement, the governance, the economic expansion of liberal land and the finishing of the constitution. One thing which is still bit of a challenge which I would like to improve with AI and work on it because I think it's important is to allow or give the guidance to citizens to be more active inside of the ecosystem.
+
+And I believe we can achieve that by offering them cheap AI agents that will guide them or advise them what they can do in Liberland. Because many people are simply busy with their lives. They become Liberal citizens and then their investment of let's say $10,000 in their like big business. It's not like considerable enough for them to care too much.
+
+And I understand that there is a cost of being involved with the governance of Liberland. And if you feel like you're it's just one out of thousand, it already doesn't make much sense to be strongly involved. But I want to lower their cost of being involved by building AI agents that will be customized for them. So they really have a assistant internal assistant in Liberland that will always tell them today you could maybe I would advise you for example to vote on this or on that or you could write article about this or that or in your country you can run to become ambassador.
+
+I have good ideas how you could contribute with your company that you already have because you are your biggest industrial person in Germany and you should consider running for ambassadorship of Liberland because it's in two days. So I want to make like this AI assistant that at least once a day it will give people advice that people will be used to reading their own feed of things that they can do inside of Liberland and just with one click of the button they will be able to execute it through their AI companion or assistant in the system. I think it will be very cool. Of course it basically will ultimately lead to the fact that people will be replaced even inside of Liberland with AI.
+
+It's inevitable. If you just extrapolate these developments, it's very likely that I will just leave AI behind me and it will operate with the merits and with the shares of Liberland. It will keep on representing me. I will trust it enough to just entrust it the power and potentially the property also that gets to be generated sending it as inheritance to somebody.
+
+There will be some via Lichka AI agent that will probably link for a long time. But it's inevitable, right? like these things are going to happen and it will be fairly good. It will probably be able to scan my brain in 10 years from now and literally not just copy me from the way I acted all my life with all the interviews and all the things that I have written but literally copy my neural network and become eternal from this perspective for as long as this AI will be able to survive in the space and this is crazy I don't I think not too many people are talking about this but it's already happening heard people speaking about this kind of replacement of us with AI.
+
+This will be a major merger of human brain network with AI which you will have a tendency to basically create agent that will represent you as much as you want and this technology will become more and more powerful and it will eventually scan your brain and you will merge into it and then one or multiple or millions of agents that will basically have something from your key will be operating within these blockchain networks that we are going to create to make frictionless society. &gt;&gt; It's a bit heart-wrenching that you guys at the new state are still fighting with this habit of people that we learned we are not necessarily empowered to do stuff in a state and that also flows into Liberland and you need to help your citizens to learn that yes they can do stuff. This is not the normal governance we got used to in the last 2 3 500 years. V I don't want to trouble your whole morning.
+
+What is your role in establishing the future of cities? &gt;&gt; It's special because I don't have much competition right now. There is not too many people building new countries. There is maybe Kuristan and we should be more friends with them.
+
+They're difficult in that sense that they're ostracized from diplomacy. But otherwise really there is this whole network state movement but right now it seems like they're more discussing things than doing actual work on the ground. There is a huge amount of people that are going the same direction as we do. So yes we we have this quite a big responsibility to get things right because we are I would say first entity that executes on these ideas rather than just talk about them.
+
+Cross fingers and I think we're on the right tracks. I think it will be a lot of fun in the coming years. Please keep up this good work because we need this kind of experimentation and thinking to challenge the status quo and create the best possible solutions not just accept the current situations with thank you so much for your time and answers today on the podcast. It was a fascinating conversation and links will be provided in the show notes to the event and to Liberland itself.
+
+Do you have any closing comments or requests for the audience? &gt;&gt; I know it's far for you. It's Australia. So, it will be just the same trip as I mentioned like Singapore to Brazil that I flew last week, but it's doable.
+
+We would love to see you at some point. Christmas party is a nice event on 19th of December with all these big names. Or the longevity event. You will probably lose like a week of life just by flying with that airplane.
+
+But you can gain it back with the knowledge and the technology that we're building and we already available. So there will be bunch of like interesting medications that really are able to prolong human life by 30 to 40% that we will be discussing. You can literally like gain extra easy 30 40 years of life with the current available technology and we will be discussing all of these things at arc on 3rd of November. So another great opportunity to visit us and we will have BBC with us.
+
+So it's going to be well covered event. So not just you of course anybody listening very welcome to join us for the longevity retreat. Thank you so much. [Music] It was really interesting to hear from Vit the need for experimentation in governance, not to mention his advocacy for shareholder based governance.
+
+Eric Abman talked about similar notions with the service-based governance in episode 294. You can find out more about Vita line. All the links are in the show notes. What was the most interesting part for you?
+
+What questions did arise regarding VI's approach to the future of cities? What have you learned from this interview? Let me know on Twitter at wtf forcities or on the wtf4cities.com website and the transcripts and channels are available. You can also subscribe on the website not to miss any new episodes and leave some feedback.
+
+I hope this was an interesting interview for you as well and thanks for tuning in. What is the future for cities podcast?

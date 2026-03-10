@@ -1,0 +1,50 @@
+SUMMARY
+Vít Jedlička presents Liberland at the 2025 Network State Conference, marking 10 years since its founding. He outlines how Liberland meets the Montevideo criteria for statehood, describes its blockchain-based governance system combining meritocracy, republic, democracy, and monarchy elements, and announces recent milestones including the election of Justin Sun as prime minister and Britannica Kaiser to Congress. He invites attendees to upcoming events including a longevity conference, tree house construction in Liberland, and a constitutional convention in Prague.
+
+KEY POINTS
+- Liberland founded April 13, 2015 on unclaimed land between Croatia and Serbia; nearly 1 million citizenship sign-ups
+- 7 square kilometers (3x Monaco), 1,300 citizens from ~800,000 applications, representation in 90+ countries
+- Meets Montevideo criteria: permanent population (2+ years), defined territory, government (first decentralized autonomous government/DAO), diplomatic capacity
+- Blockchain governance built in Rust combining meritocracy (corporate decisions), republic (limited government scope), democracy (citizen veto power), and monarchy (founder veto powers)
+- Justin Sun elected as prime minister (wealthiest PM ever elected); Britannica Kaiser also elected to Congress
+- Recent elections held 3 days prior; elections occur every 3 months with 21 Congress members
+- Upcoming: tree house construction project in Liberland, longevity clinic in Serbia, constitutional convention in Prague (Dec 19) with Herman Hoppe and Stefan Kinsella
+- $40M+ regional investment planned; improving relations with Croatia
+
+---
+
+Such an honor and pleasure to be here at the network state conference. Thank you Balaji for inviting us. I think you have been sitting for quite some time already. Uh feel free it's voluntary uh to stand up for the AMTM of Free Republic of Liberland and shake a little bit maybe.
+
+Uh it's a it's a good opportunity um to honor the great guys that also supported us in past uh it's great to have people like mele openly supporting our national movement and uh and even people like Vitalik recognizing that we have done uh something for for the movement. Liberland has been born uh in April 13, 2015. So we already have a 10 year history of country formation. Uh we have gathered almost a million people to sign up for citizenship.
+
+We actually had an amazing start where for at least two weeks we had bigger number of immigration request than United States which was pretty spectacular. there was no chance for us to process all these applications for citizenships and uh and this is how it started. We were just three guys you know that decided to build a country uh we went to place which was unclaimed for more than 20 years between Croatia and Serbia. We stick the flag there and uh and then then the rest follows and we are 10 years into building a country utilizing the best technology that is out there but also the best ideas.
+
+I'm originally political scientist but I also studied monetary economy in history and this question might sound a little bit strange here and I'm usually asking it when I start my presentation. Has anybody ever considered starting a new country here? Okay, that's way much more of course than usual audience. Usually it's like one guy or nobody.
+
+Um, so what does it take to start a country? You basically have to follow the Monte video criteria. You have to have permanent population. You have to have a defined territory.
+
+You have to have government and capacity to enter into relation with other countries. Uh, Liberland has a permanent population now for more than two years. People are permanently living in Liberland. It's one of the main concerns for us to fulfill that criteria.
+
+We have very well- definfined territory. We actually gave both Croatia and Serbia half meter in our Kadostra maps not to have any overlapping claims. We have a government. I believe we have one of the most advanced forms of government.
+
+We are already running for more than a year as a DAO as a first decentralized autonomous actually government in this case and we have capacity to enter into relations with other countries. We have a great number of diplomatic relations with multiple countries around the world and we are expanding every month. we open new diplomatic channel. Liberal land is 7 square kilometers.
+
+So we are three times bigger than Monaco. We have uh now um 1,300 citizens out of almost 800,000 applications. Um we have also quite a few residents. Liberland as you can see again is between Croatia and Serbia.
+
+We are on the Danube River with beautiful sandy island that you could see in the video. And we have one of the as as I said one of the most advanced systems of governance. I tried to look for the best technology that was available a year ago. Uh so we build a rust brasbased blockchain uh that is combining the best elements of meritocracy.
+
+So we are kind of a corporation from that perspective. The corporation is making the positive decision but we are also republic making sure that government of Liberal doesn't intrude into things like edu uh education like healthcare. We have a democratic element. We let majority of citizens to veto any law or rule that they don't like and we have a small monarchical element as well.
+
+The founders also keep some veto powers over the corporation. Everything is running on blockchain. You can already check it out. Three days ago we had elections.
+
+We have a new Congress that was elected. Probably you heard about Justin Sun. Uh he is our newly elected prime minister. It's kind of fun to have him on board.
+
+Uh big guy. He's actually the wealthiest prime minister ever elected on planet earth which is pretty pretty good result for the first elections of Netherland. Thank you. We've got now finally a woman as well.
+
+Britannica Kaiser was elected. Uh so just to invite you to a couple of events that Liberland is organizing in November. We have a longevity conference. Uh but it will do two more things.
+
+We are starting a tree project which is a big construction of 22 u tree houses in Liberland. Uh this was one of the pilot. We have a couple more already. Uh so we're building in Liberland and we have lots of other developments all around in the region.
+
+We're also starting a longevity clinic in Serbia. Uh that that's another big project but we want to make a major investment in the whole region for Croatia and Serbia to take us seriously. And also I would like to invite you to Prague because we have a first constitutional convention on 19th of December. Uh it's a great opportunity for you to visit Prague but also share some ideas with very famous thinkers like Herman Hanzope uh who is going to be presenting on liberal constitution.
+
+So I'm more than happy to be here and I'm happy to stay in touch. to join our Telegram group for specifically for this event through the CR code. And again, thank you very much.

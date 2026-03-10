@@ -1,0 +1,6 @@
+[submodule "liberland-laws"]
+	path = liberland-laws
+	url = https://github.com/liberland/laws.git
+[submodule "liberland-constitution"]
+	path = liberland-constitution
+	url = https://github.com/liberland/Constitution.git

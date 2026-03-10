@@ -1,0 +1,9 @@
+chromadb
+sentence-transformers
+langchain
+langchain-openai
+langchain-chroma
+langgraph
+fastapi
+uvicorn[standard]
+python-dotenv
