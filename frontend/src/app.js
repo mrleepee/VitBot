@@ -1,11 +1,11 @@
-import { createIcons, SendHorizontal, Sparkles, FileText, ChevronDown, AlertCircle, BookOpen, Globe, Shield, Scale, Scroll } from 'lucide';
+import { createIcons, SendHorizontal, Sparkles, FileText, ChevronDown, AlertCircle, BookOpen, Globe, Shield, Scale, Scroll, Mic, MicOff } from 'lucide';
 import { marked } from 'marked';
 import markedFootnote from 'marked-footnote';
 
 marked.setOptions({ gfm: true, breaks: true });
 marked.use(markedFootnote());
 
-const icons = { SendHorizontal, Sparkles, FileText, ChevronDown, AlertCircle, BookOpen, Globe, Shield, Scale, Scroll };
+const icons = { SendHorizontal, Sparkles, FileText, ChevronDown, AlertCircle, BookOpen, Globe, Shield, Scale, Scroll, Mic, MicOff };
 
 const WELCOME_MESSAGE = `Welcome to VitBot — your guide to the Free Republic of Liberland.\n\nI can answer questions about governance, blockchain infrastructure, constitutional law, diplomatic relations, citizenship, and more. Ask me anything.`;
 
@@ -66,16 +66,26 @@ class VitBot {
                 id="chatInput"
                 rows="3"
                 placeholder="Ask about Liberland..."
-                class="w-full rounded-2xl px-5 py-4 pr-16 text-sm text-white placeholder-zinc-600 resize-none outline-none transition-all duration-300 max-h-48"
+                class="w-full rounded-2xl px-5 py-4 pr-28 text-sm text-white placeholder-zinc-600 resize-none outline-none transition-all duration-300 max-h-48"
                 style="background: var(--color-surface-raised); border: 1px solid var(--color-border); font-family: var(--font-body);"
               ></textarea>
-              <button
-                id="sendBtn"
-                class="send-btn absolute right-3 bottom-3 w-10 h-10 rounded-xl flex items-center justify-center cursor-pointer"
-                style="background: rgba(197, 165, 78, 0.15); border: 1px solid rgba(197, 165, 78, 0.3); color: var(--color-gold);"
-              >
-                <i data-lucide="send-horizontal" class="w-4 h-4"></i>
-              </button>
+              <div class="absolute right-3 bottom-3 flex items-center gap-2">
+                <button
+                  id="micBtn"
+                  class="mic-btn w-10 h-10 rounded-xl flex items-center justify-center cursor-pointer transition-all duration-250"
+                  style="background: rgba(197, 165, 78, 0.08); border: 1px solid rgba(197, 165, 78, 0.15); color: var(--color-gold-dim);"
+                  title="Voice input"
+                >
+                  <i data-lucide="mic" class="w-4 h-4"></i>
+                </button>
+                <button
+                  id="sendBtn"
+                  class="send-btn w-10 h-10 rounded-xl flex items-center justify-center cursor-pointer"
+                  style="background: rgba(197, 165, 78, 0.15); border: 1px solid rgba(197, 165, 78, 0.3); color: var(--color-gold);"
+                >
+                  <i data-lucide="send-horizontal" class="w-4 h-4"></i>
+                </button>
+              </div>
             </div>
           </div>
         </header>
@@ -99,6 +109,9 @@ class VitBot {
     this.messagesEl = document.getElementById('messages');
     this.input = document.getElementById('chatInput');
     this.sendBtn = document.getElementById('sendBtn');
+    this.micBtn = document.getElementById('micBtn');
+    this.isListening = false;
+    this.recognition = null;
   }
 
   bindEvents() {
@@ -115,6 +128,97 @@ class VitBot {
     });
 
     this.sendBtn.addEventListener('click', () => this.handleSend());
+    this.micBtn.addEventListener('click', () => this.toggleVoiceInput());
+    this.initSpeechRecognition();
+  }
+
+  initSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      this.micBtn.style.display = 'none';
+      return;
+    }
+
+    this.recognition = new SpeechRecognition();
+    this.recognition.continuous = true;
+    this.recognition.interimResults = true;
+    this.recognition.lang = 'en-US';
+
+    let finalTranscript = '';
+
+    this.recognition.onresult = (event) => {
+      let interim = '';
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const transcript = event.results[i][0].transcript;
+        if (event.results[i].isFinal) {
+          finalTranscript += transcript;
+        } else {
+          interim += transcript;
+        }
+      }
+      this.input.value = finalTranscript + interim;
+      this.input.style.height = 'auto';
+      this.input.style.height = Math.min(this.input.scrollHeight, 192) + 'px';
+    };
+
+    this.recognition.onend = () => {
+      if (this.isListening) {
+        // Stopped unexpectedly (e.g. silence timeout) — update UI
+        this.setMicState(false);
+      }
+      finalTranscript = '';
+    };
+
+    this.recognition.onerror = (event) => {
+      console.warn('Speech recognition error:', event.error);
+      this.setMicState(false);
+      finalTranscript = '';
+
+      if (event.error === 'not-allowed') {
+        this.addErrorMessage('Microphone access denied. Check your browser settings — Brave blocks speech recognition by default (Settings → Privacy → "Use Google services for push messaging" must be enabled).');
+        this.micBtn.style.display = 'none';
+      } else if (event.error === 'network') {
+        this.addErrorMessage('Speech recognition requires a network connection. Brave users: enable "Use Google services for push messaging" in Settings → Privacy.');
+        this.micBtn.style.display = 'none';
+      }
+    };
+  }
+
+  toggleVoiceInput() {
+    if (!this.recognition) return;
+    if (this.isListening) {
+      this.recognition.stop();
+      this.setMicState(false);
+    } else {
+      try {
+        this.recognition.start();
+        this.setMicState(true);
+      } catch (e) {
+        console.warn('Failed to start speech recognition:', e);
+        this.setMicState(false);
+      }
+    }
+  }
+
+  setMicState(listening) {
+    this.isListening = listening;
+    const icon = this.micBtn.querySelector('[data-lucide]');
+    if (listening) {
+      this.micBtn.classList.add('recording');
+      this.micBtn.style.background = 'rgba(239, 68, 68, 0.15)';
+      this.micBtn.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+      this.micBtn.style.color = '#ef4444';
+      icon.setAttribute('data-lucide', 'mic-off');
+      this.micBtn.title = 'Stop listening';
+    } else {
+      this.micBtn.classList.remove('recording');
+      this.micBtn.style.background = 'rgba(197, 165, 78, 0.08)';
+      this.micBtn.style.borderColor = 'rgba(197, 165, 78, 0.15)';
+      this.micBtn.style.color = 'var(--color-gold-dim)';
+      icon.setAttribute('data-lucide', 'mic');
+      this.micBtn.title = 'Voice input';
+    }
+    createIcons({ icons, nameAttr: 'data-lucide' });
   }
 
   handleSend() {

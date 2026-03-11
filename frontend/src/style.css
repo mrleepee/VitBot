@@ -342,6 +342,15 @@ body::before {
   background: rgba(197, 165, 78, 0.03);
 }
 
+/* ── Mic button recording state ── */
+@keyframes mic-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.3); }
+  50% { box-shadow: 0 0 12px 4px rgba(239, 68, 68, 0.15); }
+}
+.mic-btn.recording {
+  animation: mic-pulse 1.5s ease-in-out infinite;
+}
+
 /* ── Send button hover ── */
 .send-btn {
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
